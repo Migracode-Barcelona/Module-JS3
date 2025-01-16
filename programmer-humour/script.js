@@ -6,3 +6,9 @@ function fetchData() {
     return data.json();
   })
 }
+
+fetchData().then((obj) => {
+fetchedImg = obj.img
+console.log(fetchedImg, "test2");
+image.setAttribute("src", fetchedImg)
+})
