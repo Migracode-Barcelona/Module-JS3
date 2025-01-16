@@ -6,3 +6,14 @@ let order = [
   { itemName: "Hot Coffee", quantity: 2, unitPrice: 1.0 },
   { itemName: "Hash Brown", quantity: 4, unitPrice: 0.4 },
 ];
+
+console.log("QTY     ITEM                TOTAL");
+order.forEach(({quantity, itemName, unitPrice}) => {
+  console.log(`${quantity.toString().padEnd(8)}${itemName.toString().padEnd(20)}${(unitPrice * quantity).toFixed(2)}`);
+})
+
+const totalPrice = order.reduce(
+  (accumulator, { unitPrice }) => accumulator + unitPrice, 0,
+);
+console.log(`
+Total: ${totalPrice}`);
