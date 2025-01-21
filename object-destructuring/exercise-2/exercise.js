@@ -70,3 +70,20 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+
+// Task 1
+for (let i = 0; i < hogwarts.length; i++) {
+  const person = hogwarts[i];
+  if (person.house === "Gryffindor") {
+    console.log(person.firstName + " " + person.lastName);
+  }
+}
+
+// Task 2
+for (let i = 0; i < hogwarts.length; i++) {
+  const person = hogwarts[i];
+  if (person.occupation === "Teacher" && person.pet !== null) {
+    // Check if they are a teacher and have a pet
+    console.log(person.firstName + " " + person.lastName);
+  }
+}
