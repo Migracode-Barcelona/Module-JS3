@@ -73,8 +73,17 @@ function displayMainImage(image) {
 
 // Initialize the app by fetching the weather and images for the default city
 async function init() {
+  cityInput.value = currentCity; // Update search field with current city name
   const weatherDescription = await fetchWeather(currentCity);
   const images = await fetchImages(weatherDescription);
+
+  // Display a random main image
+  if (images.length > 0) {
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+    displayMainImage(randomImage);
+  }
+
+  // Display all images as thumbnails
   displayThumbnails(images);
 }
 
