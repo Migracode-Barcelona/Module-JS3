@@ -8,6 +8,8 @@ function comicGenerator(){
         return response.json()
     })
     .then((data)=>{
+        console.log(data);
+        
         const image = `<img src="${data.img}" alt="${data.alt}" />`
         comicContainer.innerHTML = `<p style="color: red;">Failed to load the comic. Please try again.</p>`
     })
