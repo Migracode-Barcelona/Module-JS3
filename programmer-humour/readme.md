@@ -1,8 +1,8 @@
 # Programmer humour
 
 Who knew programmers could be funny?
-
-Write an function that makes an API call to `https://xkcd.now.sh/?comic=latest`
+`https://xkcd.now.sh/?comic=latest`
+Write an function that makes an API call to t`
 
 1. Create a `HTML`, `CSS` and `JavaScript` file to write your code in
 
