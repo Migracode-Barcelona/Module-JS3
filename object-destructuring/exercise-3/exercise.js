@@ -6,3 +6,22 @@ let order = [
   { itemName: "Hot Coffee", quantity: 2, unitPrice: 1.0 },
   { itemName: "Hash Brown", quantity: 4, unitPrice: 0.4 },
 ];
+
+function orders() {
+  let totalCost = 0;
+
+  console.log("QTY  ITEM  TOTAL");
+  order.forEach((product) => {
+    const { quantity, itemName, unitPrice } = product;
+    const itemTotal = quantity * unitPrice;
+    totalCost += itemTotal;
+
+    console.log(
+      `${quantity}  ${itemName.padEnd(18)} ${itemTotal.toFixed(2)}`
+    );
+  });
+
+  console.log(`\nTotal: ${totalCost.toFixed(2)}`);
+}
+
+orders();
