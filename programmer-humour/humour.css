@@ -9,7 +9,7 @@ main{
 }
 
 h1{
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     margin-top: 60px;
     color: azure;
@@ -20,6 +20,7 @@ h1{
     margin-top: 30px;
     min-height: 700px;
     border: 5px solid rgb(167, 210, 216);
+    background-color: rgb(247, 247, 234);
     
 
 }
