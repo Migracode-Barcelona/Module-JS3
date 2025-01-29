@@ -1,0 +1,25 @@
+
+body{
+    background-color:rgb(99, 120, 133);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 60px;
+    color: azure;
+}
+
+.image-container{
+    width: 700px;
+    margin-top: 30px;
+    min-height: 700px;
+    border: 5px solid rgb(167, 210, 216);
+    
+
+}
